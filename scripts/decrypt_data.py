@@ -30,7 +30,7 @@ def decrypt_all_files(channel_id, raw_dir="./data/raw/", decrypted_dir="./data/d
             print(f"File not found: {raw_file_path}, skipping.")
             continue
 
-        print(f"Decrypting {filename}...")
+        print(f"Decrypting {filename}..")
         decrypted_data = decrypt_data(raw_file_path, passcode)
         if decrypted_data is not None:
             # Save the decrypted data
