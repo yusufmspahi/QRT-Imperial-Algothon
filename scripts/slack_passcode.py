@@ -16,7 +16,7 @@ trusted_user_id = "U080GCRATP1"
 message_pattern = re.compile(r"Data has just been released '([^']+)' the passcode is '([^']+)'", re.IGNORECASE)
 
 
-def get_latest_file_and_passcode(channel_id):
+
     try:
         # Fetch latest messages
         response = client.conversations_history(channel=channel_id, limit=10)
